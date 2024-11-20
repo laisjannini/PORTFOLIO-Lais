@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<img src="trabajo/imagens/cabeçalho.jpg">
-
+<body>   
    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
@@ -15,8 +14,29 @@
             color: #e1c066;
         }
 
+        .header {
+    width: 100%; 
+    height: 300px; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #1a1a1a; 
+}
+
+
+    .header-img {
+    width: 100%; 
+    max-width: 45%; 
+    height: 100%;
+    object-fit: cover; 
+            
+    }
+        
+
         .navbar {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 16px;
             padding: 16px 0;
@@ -45,7 +65,7 @@
         .gallery img {
             width: 45%;
             height: auto;
-            border: 2px solid #e1c066;
+        
         }
         
         .btn2 {
@@ -73,7 +93,7 @@
             height: calc(100% - -2px);
             background-color: #181818;
             transition: 0.5s ease-out;
-            transform: scaleY(1);
+            
         }
 
         .btn2::after {
@@ -83,9 +103,9 @@
             left: -2px;
             width: calc(100% + 4px);
             height: calc(100% - 50px);
-            background-color: #212121;
+            background-color: #e1c066;
             transition: 0.5s ease-out;
-            transform: scaleY(1);
+            
         }
 
         .btn2:hover::before {
@@ -113,15 +133,112 @@
             background-color: transparent;
         }
         
+        .quem-e-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0; 
+}
+
+.quem-e-content {
+    display: flex;
+    align-items: flex-start; 
+    gap: 40px; 
+    max-width: 900px; 
+}
+
+.quem-e-title {
+    width: 200px; 
+    align-items:flex-start;
+    margin-top: 120px;
+    text-decoration: underline;
+    color: #e1c066;
+    font-size: 18px; 
+}
+
+.quem-e-description {
+    text-align: left;
+    color: #e1c066;
+    padding: 70px;
+ width: 25%;
+ margin-right: 4px;
+text-align: left;
+}
+
+.lai {
+display: flex;
+justify-content: center;
+
+
+}
+
+.lai img {
+width: 25%;
+height: auto;
+        
+}
+
+html {
+            scroll-behavior: smooth;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #e1c066;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 2px solid #e1c066; 
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            filter: invert(73%) sepia(84%) saturate(352%) hue-rotate(359deg) brightness(105%) contrast(103%);
+            transition: transform 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-contact p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .icon-contact {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            filter: invert(73%) sepia(84%) saturate(352%) hue-rotate(359deg) brightness(105%) contrast(103%);
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
 
+
+    <header class="header">
+        <img src="https://i.pinimg.com/736x/4c/23/ec/4c23ec3155632eb0cec089de9822dc33.jpg" class="header-img">
+    </header>
+
     <nav class="navbar">
         <a href="#quem-e">QUEM É</a>
-        <a href="#contato">CONTATO</a>
-        <a href="#instagram">INSTAGRAM</a>
+        <a href="#footer">CONTATO</a>
+        <a href="#footer">INSTAGRAM</a>
     </nav>
+
 
     <section class="gallery">
         <img src="imagens/imagem1.jpg">
@@ -129,8 +246,57 @@
     
     <div align="center">
     <button class="btn2"><span>ECOS DA CIDADE</span></button>
+    
+     <section class="gallery">
+        <img src="imagens/imagem2.jpg">
+    </section>
+    
+    <div align="center">
+    <button class="btn2"><span>COLAGENS</span></button>
+    
+     <section class="gallery">
+        <img src="imagens/imagem3.jpg">
+    </section>
+    
+    <div align="center">
+    <button class="btn2"><span>GALERIA FOTOGRÁFICA</span></button>
+    
+    <div class="quem-e-section" id="quem-e">
+        <div class="quem-e-title">QUEM É</div>
+        <div class="quem-e-description">
+            Laís se destaca com um conteúdo único e original, compartilhando suas visões artísticas e reflexões sobre a vida cotidiana de uma forma natural e criativa, envolvendo artes como a música, que sempre esteve muito presente em sua vida. Atualmente, desenvolve projetos criativos para desenvolvimento pessoal, quer sempre expandir seu repertório artístico e inspirar a todos através da arte e criatividade.
+        </div>
+    </div>
 
+    <section class="lai">
+        <img src="imagens/lai.PNG">
+    </section>
+</div>
+
+<footer class="footer" id="footer">
+    <div class="footer-content">
+        <div class="footer-social">
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="icon">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn" class="icon">
+            </a>
+        </div>
+        <div class="footer-contact">
+            <p>
+                <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Telefone" class="icon-contact">
+                (11) 971644645
+            </p>
+            <p>
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="E-mail" class="icon-contact">
+                lais.santana621@gmail.com
+            </p>
+        </div>
+    </div>
+</footer>
    
 
 </body>
 </html>
+
